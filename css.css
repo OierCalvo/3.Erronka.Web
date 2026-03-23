@@ -1,6 +1,13 @@
-html, body {
-    margin: 0;
-    padding: 0;
+* {
+    box-sizing: border-box;
+}
+
+html,body{
+    margin:0;
+    padding:0;
+}
+
+html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #0C1F2A 0%, #1B3A52 55%, #163750 100%);
     color: #EEF2F7;
@@ -15,18 +22,6 @@ body {
     line-height: 1.6;
 }
 
-main, .container {
-    width: min(96%, 920px);
-    max-width: 920px;
-    margin: 0 auto;
-    padding: 1.5rem;
-    background: rgba(255, 255, 255, 0.08);
-    border-radius: 18px;
-    box-shadow: 0 10px 35px rgba(0,0,0,0.35);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255,255,255,0.12);
-}
-
 h1, h2, h3 {
     margin: 1.2rem 0 0.6rem;
     letter-spacing: 0.02em;
@@ -37,11 +32,6 @@ h1 {
     font-size: 2.4rem;
     color: #fafcff;
     text-shadow: 0 2px 14px rgba(0,0,0,0.32);
-}
-
-p {
-    margin: 0.75rem 0;
-    max-width: 60ch;
 }
 
 a {
@@ -56,7 +46,9 @@ a:hover {
 
 .zoo_h {
     margin-top: 1rem;
-    padding: 50px ;
+    max-width: auto;
+    margin:20px;
+    padding:20px;
     border-radius: 14px;
     background: rgba(0, 0, 0, 0.18);
     border: 1px solid rgba(255, 255, 255, 0.14);
@@ -65,6 +57,16 @@ a:hover {
 .mobile {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap:30px;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    height:80px;
+    width:100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    margin:0;
 }
 
 .mobile>img{
@@ -77,7 +79,7 @@ a:hover {
 }
 
 .sidebar{
-    background-color: black;
+    background: linear-gradient(135deg, #1e2a36 0%, #3e5770 100%);
     height: 100%;
     width: 0;
     position: fixed;
@@ -93,7 +95,6 @@ a:hover {
 .sidebar a {
   width: 100%;
   display: block;
-  background-color: black;
   color: #f2f2f2;
   text-align: center;
   text-decoration: none;
@@ -148,6 +149,39 @@ button:hover{
     transform: scale(1.1);
 }
 
+iframe{
+    width:90%;
+    margin-bottom:20px;
+}
+
+.login-form{
+    width:40%;
+    margin-top:220px;   
+    padding:50px;
+    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+}
+
+.login-form>form>input{
+    width:90%;
+}
+
+.login-form>form>label{
+    width:90%;
+}
+
+.container h1 {
+    font-size: 32px;
+}
+
+.container h2 {
+    font-size: 20px;
+    color:rgb(55, 111, 162);
+}
+
+.container ul li {
+    padding: 10px;
+}
+
 @media (min-width: 1024px){
 html, body{
     margin:0;
@@ -158,6 +192,7 @@ html, body{
 .mobile{
     display:none;
 }
+
 .header{
     display:flex;
     flex-direction: row;
@@ -171,28 +206,33 @@ html, body{
     top: 0;
     z-index: 100;
 }
+
 .header>a{
     text-decoration: none;
-    color: #ecf0f1;
+    color: #e5eaeb;
     font-weight: 500;
     font-size: 16px;
     transition: all 0.3s ease;
     padding: 8px 12px;
     border-radius: 4px;
+    margin-left:10px;
 }
+
+.zoo_h {
+    margin-top: 1rem;
+    max-width: auto;
+    margin:50px;
+    padding:20px;
+    border-radius: 14px;
+    background: rgba(0, 0, 0, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
 .header>a:hover{
     color: #3498db;
     background-color: rgba(52, 152, 219, 0.1);
-    transform: translateY(-2px);
 }
-.header>img{
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    filter: invert(1) brightness(1.2);
-}
-.header>img:hover{
-    transform: scale(1.1);
-}
+
 button{
     background-color: #3498db;
     margin-left: 10px;
@@ -205,9 +245,62 @@ button{
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+    margin-right:10px;
 }
 button:hover{
     background-color: #2980b9;
     box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4);
+}
+
+iframe{
+    width:90%;
+    margin-bottom:20px;
+}
+
+.login-form{
+    width:40%;
+    margin-top:220px;   
+    padding:50px;
+    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+    text-align: left;
+}
+
+.container h1 {
+    text-align: center;
+    color: #4c8455;
+    margin: 40px 0 30px;
+    font-size: 2.8em;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.container h2 {
+    color: #568147;
+    padding-bottom: 10px;
+    margin: 30px 0 20px;
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+.container p {
+    color: #ae9090;
+    line-height: 1.8;
+    margin: 12px 0;
+    font-size: 1em;
+}
+
+.container ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 25px;
+}
+
+.container ul li {
+    padding: 12px 15px 12px 40px;
+    margin: 8px 0;
+    position: relative;
+    border-radius: 4px;
+    color: #7aadcd;
+    transition: all 0.3s ease;
 }
 }
