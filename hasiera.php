@@ -11,40 +11,40 @@ include_once "header.php";
 </head>
 <body>
     <div class="container">
-        <h1>Ongi etorri BBC zoologikora</h1>
-        <h2>Irekiera ordutegiak:</h2>
+        <h1><?= trans("ongietorri") ?></h1>
+        <h2><?= trans("ordutegi") ?></h2>
         <ul>
-            <li><strong>Astelehenetik ostiralera:</strong> 9:00 AM - 6:00 PM</li>
-            <li><strong>Larunbat eta igandea:</strong> 9:00 AM - 7:00 PM</li>
-            <li><strong>Festa egunak:</strong> 10:00 AM - 5:00 PM</li>
+            <li><?= trans("ordutegi1") ?></li>
+            <li><?= trans("ordutegi2") ?></li>
+            <li><?= trans("ordutegi3") ?></li>
         </ul>
-            <h2>Prezioak:</h2>
+            <h2><?= trans("prezioak") ?></h2>
             <ul>
-                <li>Helduak(12+ urte): 15€</li>
-                <li>Umeak (3-12 urte): 10€</li>
-                <li>Haurrak (0-3 urte): 0€</li>
-                <li>Taldeak(10+): %20-ko diskontua</li>
+                <li><?= trans("helduak") ?></li>
+                <li><?= trans("umeak") ?></li>
+                <li><?= trans("haurrak") ?></li>
+                <li><?= trans("taldeak") ?></li>
             </ul>
 
-            <h2>Bisitarientzako arauak:</h2>
+            <h2><?= trans("arauak") ?></h2>
             <ul>
-                <li>Zoologikoaren itxiera orduak errespetatu</li>
-                <li>Animaliak ez elikatu</li>
-                <li>Animalien itxituratik distantzia segurua mantentzea</li>
-                <li>Debekatua hesiak eta kristalak ukitzea</li>
-                <li>Haurrek gurasoen edo pertsona helduen ondoan joan behar dira, inoiz bakarrik</li>
-                <li>Zoologikoan erositako janaria bakarrik, etxetik ekarritakoa ez</li>
-                <li>Alkoholdun edariak ezin dira kontsumitu</li>
-                <li>Zoologikoaren seinalizazioa errespetatu</li>
+                <li><?= trans("arau1") ?></li>
+                <li><?= trans("arau2") ?></li>
+                <li><?= trans("arau3") ?></li>
+                <li><?= trans("arau4") ?></li>
+                <li><?= trans("arau5") ?></li>
+                <li><?= trans("arau6") ?></li>
+                <li><?= trans("arau7") ?></li>
+                <li><?= trans("arau8") ?></li>
             </ul>
 
-            <h2>Zerbitzuak:</h2>
+            <h2><?= trans("zerbitzuak") ?></h2>
             <ul>
-                <li>Jatetxe eta kafetegia</li>
-                <li>Oroigarri denda</li>
-                <li>Atseden zonaldeak</li>
-                <li>Komun publikoak</li>
-                <li>Aparkaleku doaina</li>
+                <li><?= trans("zerb1") ?></li>
+                <li><?= trans("zerb2") ?></li>
+                <li><?= trans("zerb3") ?></li>
+                <li><?= trans("zerb4") ?></li>
+                <li><?= trans("zerb5") ?></li>
             </ul>
     </div>
 </body>

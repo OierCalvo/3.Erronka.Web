@@ -1,0 +1,36 @@
+<?php
+return [
+    "hasiera" => "Hasiera",
+    "guri_buruz" => "Guri buruz",
+    "habitatak" => "Habitatak",
+    "ekitaldiak" => "Ekitaldiak",
+    "login" => "Saioa hasi",
+    "aldatu" => "Aldatu",
+    "ongietorri" => "Ongi etorri BBC zoologikora",
+    "ordutegi" => "Irekiera ordutegiak:",
+    "ordutegi1" => "Astelehenetik ostiralera: 9:00 AM - 6:00 PM",
+    "ordutegi2" => "Larunbat eta igandea: 9:00 AM - 7:00 PM",
+    "ordutegi3" => "Festa egunak: 10:00 AM - 5:00 PM",
+    "prezioak" => "Prezioak:",
+    "helduak" => "Helduak(12+ urte): 15€",
+    "umeak" => "Umeak (3-12 urte): 10€",
+    "haurrak" => "Haurrak (0-3 urte): 0€",
+    "taldeak" => "Taldeak(10+): %20-ko diskontua",
+    "arauak" => "Bisitarientzako arauak:",
+    "arau1" => "Zoologikoaren itxiera orduak errespetatu",
+    "arau2" => "Animaliak ez elikatu",
+    "arau3" => "Animalien itxituratik distantzia segurua mantentzea",
+    "arau4" => "Debekatua hesiak eta kristalak ukitzea",
+    "arau5" => "Haurrek gurasoen edo pertsona helduen ondoan joan behar dira, inoiz bakarrik",
+    "arau6" => "Zoologikoan erositako janaria bakarrik, etxetik ekarritakoa ez",
+    "arau7" => "Alkoholdun edariak ezin dira kontsumitu",
+    "arau8" => "Zoologikoaren seinalizazioa errespetatu",
+    "zerbitzuak" => "Zerbitzuak:",
+    "zerb1" => "Jatetxe eta kafetegia",
+    "zerb2" => "Oroigarri denda",
+    "zerb3" => "Atseden zonaldeak",
+    "zerb4" => "Komun publikoak",
+    "zerb5" => "Aparkaleku doaina"
+
+
+];

@@ -1,3 +1,6 @@
+<?php
+    include_once "translations.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,12 +12,15 @@
 <body>
     <header>
         <div class="header">
-            <a href="hasiera.php">Hasiera</a>
-            <a href="guri_buruz.php">Guri buruz</a>
-            <a href="habitatak.php">Habitatak</a>
-            <a href="ekitaldiak.php">Ekitaldiak</a>
+            <a href="hasiera.php"><?= trans("hasiera") ?></a>
+            <a href="guri_buruz.php"><?= trans("guri_buruz") ?></a>
+            <a href="habitatak.php"><?= trans("habitatak") ?></a>
+            <a href="ekitaldiak.php"><?= trans("ekitaldiak") ?></a>
             <img src="https://static.vecteezy.com/system/resources/thumbnails/019/787/018/small/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.png" height="40px" width="60px"/>
-            <a href="login.php"><button class="sh">Saioa hasi</button></a>
+            <a href="login.php"><button class="sh"><?= trans("login") ?></button></a>
+            <?php
+                include "selectLang.php";
+            ?>
         </div>
 
         <div class="mobile">
@@ -22,11 +28,14 @@
 
     <div class="sidebar" id="mySidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
-        <a href="login.php"><button class="sh">Saioa hasi</button></a>
-        <a href="hasiera.php">Hasiera</a>
-        <a href="guri_buruz.php">Guri buruz</a>
-        <a href="habitatak.php">Habitatak</a>
-        <a href="ekitaldiak.php">Ekitaldiak</a>
+        <?php
+        include "selectLang.php";
+        ?>
+        <a href="login.php"><button class="sh"><?= trans("login") ?></button></a>
+        <a href="hasiera.php"><?= trans("Hasiera") ?></a>
+        <a href="guri_buruz.php"><?= trans("guri_buruz") ?></a>
+        <a href="habitatak.php"><?= trans("habitatak") ?></a>
+        <a href="ekitaldiak.php"><?= trans("ekitaldiak") ?></a>
     </div>
     <img src="https://static.vecteezy.com/system/resources/thumbnails/019/787/018/small/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.png" height="40px" width="60px"/>
 </div>
