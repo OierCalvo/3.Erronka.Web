@@ -1,5 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
 <form method="post">
-    <select name="selectedLang">
+    <select name="selectedLang" class="lang-select">
         <!-- PHPko logika honekin formularioan zein hizkuntza agertzen den aukeratuta erabakiko dugu -->
         <option value="eus" <?php
         //formulariotik aukeratutako hizkuntza euskara bada
@@ -23,4 +32,6 @@
         ?>> ES</option>
     </select>
     <button><?= trans("aldatu") ?></button>
-</form>
+</form>    
+</body>
+</html>

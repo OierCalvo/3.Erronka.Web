@@ -8,14 +8,14 @@ return [
     "aldatu" => "Aldatu",
     "ongietorri" => "Ongi etorri BBC zoologikora",
     "ordutegi" => "Irekiera ordutegiak:",
-    "ordutegi1" => "Astelehenetik ostiralera: 9:00 AM - 6:00 PM",
-    "ordutegi2" => "Larunbat eta igandea: 9:00 AM - 7:00 PM",
-    "ordutegi3" => "Festa egunak: 10:00 AM - 5:00 PM",
+    "ordutegi1" => "<b>Astelehenetik ostiralera</b>: 9:00 AM - 6:00 PM",
+    "ordutegi2" => "<b>Larunbat eta igandea</b>: 9:00 AM - 7:00 PM",
+    "ordutegi3" => "<b>Festa egunak</b>: 10:00 AM - 5:00 PM",
     "prezioak" => "Prezioak:",
-    "helduak" => "Helduak(12+ urte): 15€",
-    "umeak" => "Umeak (3-12 urte): 10€",
-    "haurrak" => "Haurrak (0-3 urte): 0€",
-    "taldeak" => "Taldeak(10+): %20-ko diskontua",
+    "helduak" => "<b>Helduak(12+ urte)</b>: 15€",
+    "umeak" => "<b>Umeak (3-12 urte)</b>: 10€",
+    "haurrak" => "<b>Haurrak (0-3 urte)</b>: 0€",
+    "taldeak" => "<b>Taldeak(10+)</b>: %20-ko diskontua",
     "arauak" => "Bisitarientzako arauak:",
     "arau1" => "Zoologikoaren itxiera orduak errespetatu",
     "arau2" => "Animaliak ez elikatu",
@@ -30,7 +30,26 @@ return [
     "zerb2" => "Oroigarri denda",
     "zerb3" => "Atseden zonaldeak",
     "zerb4" => "Komun publikoak",
-    "zerb5" => "Aparkaleku doaina"
-
-
+    "zerb5" => "Aparkaleku doaina",
+    "H&H" => "Zoologikoaren historia eta helburua",
+    "historia" => "Zoologikoaren historia:",
+    "1968" => "1968 urtean Beasainen natura zale eta hiritar talde bat bildu ziren helburu bakar batekin,
+    edozein adinetako pertsonek euskal herriko eta mundu osoko faunari buruz ikasteko leku bat sortzea,
+    horrela sortu zen BBC zoologikoa.",
+    "1970" => "1970-eko hamarkadan zoologikoa haunditzen hasi zen gutxinaka gutxinaka.1973-an hegaztien habitat-a sortu zen, txoritegi irekia penintsula iberikoko hegazti ezberdinekin. 
+    1979-an gure zoologikoko lehenengo ugaztun exotikoak izan genituen, kapibara talde bat eta jaguar talde bat, hauek portugalgo zoologiko batekin egindako truke batean iritsi ziren.
+    1984-an gure lehenengo basabizitza erreskate eta errehabilitazio zentroa sortu genuen, hau albataritza zentro bat bezela funtzionatzen zuen, zaurituta edo gaixotasunak zeuzkaten animaliak honera etortzen dira mota askotako errebisioak eta operazioak egiteko.
+    1992-an Maria Antonia zuzendari lana utzi zuen eta bere ordez Ana Sorozabal sartu zen, albaitari espezializatua gatibu hazkuntza proiektuetan. 
+    Gaur egun gure zoologikoak x espezie baino gehiagori aterpea ematen die. Urtero 80.000 bisitari baino gehiagori irekitzen dizkiegu ateak eta espainiako iparraldean erreferentzi zoologikoa bihurtu gara gure esperientzia eta lan gogorragatik.",
+    "fundatzaileak" => "Fundatzaileak:",
+    "MAG" => "<b>Maria Antonia Garmendia</b>: Beasaineneko eskolan irakatsi zuen biologoa, animalien abitatei buruzko ezagutzak zituena.",
+    "MKI" => "<b>Miguel Koldo Iriondo</b>: Zumarragako enpresaburua eta filantropoa, zoologikoa sortzeko diru gehiena eman zuena.",
+    "JAO" => "<b>Jorge Alzaga Orio</b>: Euskal herriko albatari ezagunetarikoena, animaliei sendatzeko eta osasuntsu mantentzeko jakintzak eman eta irakatsi zituena.",
+    "Helburua" => "Zoologikoaren helburua:",
+    "helburuaP" => "Hasieratik gure filosofia oso argia izan da, lehenik eta behin ingurumen hezkuntza sustatzen dugu jarduera ezberdinen bitartez, hala nola, eskola ezberdinei hitzaldiak eta ateraldiak eskaintzen, baita ere tailer ezberdinak egiten.
+    Horrez gain desagertzeko arriskuan dauden animalien konserbazioa sustatzen dugu programa ezberdinen bitartez. Azkenik zoologikoko animalien ongizatea lehenesten dugu ezerren aurretik, honen adibideak bezela, gure habitat artifizialak ahalik eta errealenak egiten ditugu animaliek naturan egongo balira bezela sentitu daitezen.",
+    "erab" => "Erabiltzailea:",
+    "pas" => "Pasahitza:",
+    "val" => "Saioa hasi",
+    "error" => "Erabiltzailea edo pasahitza okerrak"
 ];
