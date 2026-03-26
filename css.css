@@ -149,7 +149,8 @@ button:hover{
     background-color: #578f5a;
     color: white;
     border: none;
-    padding: 5px 14px;
+    margin-right:0;
+    padding: 5px 10px;
     border-radius: 6px;
     font-weight: 600;
     font-size: 15px;
@@ -161,6 +162,10 @@ button:hover{
 .lang-select:hover {
     background-color: #457c48;
     box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4);
+}
+
+.langBtn{
+    margin-left:0;
 }
 
 .header>img{
@@ -215,6 +220,7 @@ iframe{
 .container ul li {
     padding: 10px;
 }
+
 
 @media (min-width: 1024px){
 html, body{

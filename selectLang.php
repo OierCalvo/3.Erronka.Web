@@ -31,7 +31,7 @@
         }
         ?>> ES</option>
     </select>
-    <button><?= trans("aldatu") ?></button>
+    <button class="langBtn"><?= trans("aldatu") ?></button>
 </form>    
 </body>
 </html>

@@ -16,7 +16,14 @@
             <a href="guri_buruz.php"><?= trans("guri_buruz") ?></a>
             <a href="habitatak.php"><?= trans("habitatak") ?></a>
             <a href="ekitaldiak.php"><?= trans("ekitaldiak") ?></a>
-            <a href="login.php"><button class="sh"><?= trans("login") ?></button></a>
+            <?php
+            if(isset($_SESSION["erab"])){
+            echo $_SESSION["erab"];
+            echo "<a href='logout.php'><button class='sh'>" . trans("logout") . "</button></a>";
+            }else{
+            echo "<a href='login.php'><button class='sh'> " .  trans("login") . "</button></a>";
+            }
+            ?>
             <?php
                 include "selectLang.php";
             ?>

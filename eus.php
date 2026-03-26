@@ -51,5 +51,6 @@ return [
     "erab" => "Erabiltzailea:",
     "pas" => "Pasahitza:",
     "val" => "Saioa hasi",
-    "error" => "Erabiltzailea edo pasahitza okerrak"
+    "error" => "Erabiltzailea edo pasahitza okerrak",
+    "logout" => "Saioa itxi"
 ];

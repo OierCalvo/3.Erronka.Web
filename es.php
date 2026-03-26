@@ -51,5 +51,6 @@ return [
     "erab" => "Usuario:",
     "pas" => "Contraseña:",
     "val" => "Iniciar sesion",
-    "error" => "Usuario o contraseña incorrectos"
+    "error" => "Usuario o contraseña incorrectos",
+    "logout" => "Cerrar sesion"
 ];
