@@ -11,7 +11,7 @@ $stmt = $pdo->query("SELECT * FROM bezeroak");
 foreach($stmt as $row){
 
     if ($erabiltzailea == $row["email"] && $pasahitza == $row["pasahitza"]) {
-    $_SESSION['erab'] = $_POST['erab'];
+    $_SESSION['erab'] = $_POST["erab"];
     header("Location: hasiera.php");
     exit();
 }

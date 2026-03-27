@@ -52,5 +52,8 @@ return [
     "pas" => "Pasahitza:",
     "val" => "Saioa hasi",
     "error" => "Erabiltzailea edo pasahitza okerrak",
-    "logout" => "Saioa itxi"
+    "logout" => "Saioa itxi",
+    "hemen" => "Ez daukazu akonturik?",
+    "click" => "Erregistratu",
+    "erregistratu" => "Erregistratu"
 ];

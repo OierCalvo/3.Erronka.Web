@@ -221,6 +221,27 @@ iframe{
     padding: 10px;
 }
 
+.erab_login{
+    display: flex;
+    flex-direction: row;
+}
+
+.erab_login>p{
+    text-align:center;
+}
+
+.erab_login>a{
+    margin-top:10px;
+}
+
+.erregistro{
+    display: flex;
+    flex-direction: row;
+}
+
+.erregistro>a{
+    margin-top:16px;
+}
 
 @media (min-width: 1024px){
 html, body{
@@ -374,4 +395,31 @@ iframe{
     color: #7aadcd;
     transition: all 0.3s ease;
 }
+
+.erab_login{
+    display: flex;
+    flex-direction: row;
+}
+
+.erab_login>p{
+    text-align:center;
+}
+
+.erab_login>a{
+    text-align: center;
+}
+
+.sh{
+    margin:0;
+}
+
+.erregistro{
+    display: flex;
+    flex-direction: row;
+}
+
+.erregistro>a{
+    margin-top:16px;
+}
+
 }

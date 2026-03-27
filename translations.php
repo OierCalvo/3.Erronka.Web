@@ -1,19 +1,33 @@
 <?php
 
-// EKINTZAK
+session_start();
 
-session_start(); //Sesioa hasten dugu bertan gordetzeko zein hizkuntzatan ari garen
+if (isset($_SESSION["erab"])) {
+    $erabiltzailea = $_SESSION["erab"];
+    $archivo = "hizkuntzak.xml";
+    $xml = simplexml_load_file($archivo);
 
-if (!isset($_SESSION["_LANGUAGE"])) { //Sesioan hizkuntza ez bada gorde
-  setSessionLanguageToDefault(); //Defektuzko hizkuntza jartzen dugu
+    $aurkitutakoHizkuntza = null;
+
+    foreach ($xml->bezeroa as $bezeroa) {
+        if ($bezeroa['erabiltzailea'] === $erabiltzailea) {
+            $aurkitutakoHizkuntza = $bezeroa->hizkuntza;
+            break;
+        }
+    }
+
+    if ($aurkitutakoHizkuntza !== null) {
+        $_SESSION["_LANGUAGE"] = $aurkitutakoHizkuntza;
+    } else if (!isset($_SESSION["_LANGUAGE"])) {
+        setSessionLanguageToDefault();
+    }
+
+} else if (!isset($_SESSION["_LANGUAGE"])) {
+
+    setSessionLanguageToDefault();
 }
 
-changeSessionLanguage(); //Beti funtzio hontan sartzen gara
-
 ?>
-
-<!-- HTML-A -->
-
 <?php
 
 /** FUNTZIOAK */

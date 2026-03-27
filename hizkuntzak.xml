@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bezeroak>
+    <bezeroa erabiltzailea="aitor.alonso@example.com">
+        <hizkuntza>es</hizkuntza>
+    </bezeroa>
+    <bezeroa erabiltzailea="clara.iglesias@example.com">
+        <hizkuntza>eus</hizkuntza>
+    </bezeroa>
+</bezeroak>

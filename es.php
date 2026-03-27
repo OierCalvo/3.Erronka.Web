@@ -52,5 +52,8 @@ return [
     "pas" => "Contraseña:",
     "val" => "Iniciar sesion",
     "error" => "Usuario o contraseña incorrectos",
-    "logout" => "Cerrar sesion"
+    "logout" => "Cerrar sesion",
+    "hemen" => "No tienes una cuenta?",
+    "click" => "Registrate",
+    "erregistratu" => "Registrarse"
 ];
