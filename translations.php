@@ -10,7 +10,7 @@ if (isset($_SESSION["erab"])) {
     $aurkitutakoHizkuntza = null;
 
     foreach ($xml->bezeroa as $bezeroa) {
-        if ($bezeroa['erabiltzailea'] === $erabiltzailea) {
+        if ((string)$bezeroa['erabiltzailea'] === $erabiltzailea) {
             $aurkitutakoHizkuntza = $bezeroa->hizkuntza;
             break;
         }

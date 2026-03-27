@@ -6,4 +6,7 @@
     <bezeroa erabiltzailea="clara.iglesias@example.com">
         <hizkuntza>eus</hizkuntza>
     </bezeroa>
+    <bezeroa erabiltzailea="jose.perez@example.com">
+        <hizkuntza>es</hizkuntza>
+    </bezeroa>
 </bezeroak>
