@@ -4,14 +4,13 @@ session_start();
 
 if (isset($_SESSION["erab"])) {
     $erabiltzailea = $_SESSION["erab"];
-    $archivo = "hizkuntzak.xml";
-    $xml = simplexml_load_file($archivo);
+    $xml = simplexml_load_file("hizkuntzak.xml");
 
     $aurkitutakoHizkuntza = null;
 
     foreach ($xml->bezeroa as $bezeroa) {
-        if ((string)$bezeroa['erabiltzailea'] === $erabiltzailea) {
-            $aurkitutakoHizkuntza = $bezeroa->hizkuntza;
+        if ((string)$bezeroa['erabiltzailea'] === $erabiltzailea){
+            $aurkitutakoHizkuntza = (string)$bezeroa->hizkuntza;
             break;
         }
     }
