@@ -26,6 +26,8 @@ if (isset($_SESSION["erab"])) {
     setSessionLanguageToDefault();
 }
 
+changeSessionLanguage();
+
 ?>
 <?php
 

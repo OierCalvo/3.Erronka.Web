@@ -10,7 +10,7 @@ $stmt = $pdo->query("SELECT * FROM bezeroak");
 
 foreach($stmt as $row){
 
-    if ($erabiltzailea == $row["email"] && $pasahitza == $row["pasahitza"]) {
+    if ($erabiltzailea == $row["posta_elektronikoa"] && $pasahitza == $row["pasahitza"]) {
     $_SESSION['erab'] = $_POST["erab"];
     header("Location: hasiera.php");
     exit();
