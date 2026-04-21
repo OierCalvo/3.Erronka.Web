@@ -61,9 +61,15 @@ return [
     "telefonoa" => "Telefonoa:",
     "posta" => "Posta elektronikoa:",
     "pasahitza" => "Pasahitza:",
-    "nan" => "Nan:",
+    "adina" => "Adina:",
     "Erreserbatu" => "Erreserba egin",
     "Data" => "Data",
-    "Pertsonak" => "Pertsonak"
+    "Pertsonak" => "Pertsonak",
+    "pr1" => "Lehenengo pertsonaren adina:",
+    "pr2" => "Bigarren pertsonaren adina:",
+    "pr3" => "Hirugarren pertsonaren adina:",
+    "pr4" => "Laugarren pertsonaren adina:",
+    "pr5" => "Bostgarren pertsonaren adina:",
+    "Bidali" => "Bidali"
 
 ];

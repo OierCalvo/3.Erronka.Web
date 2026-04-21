@@ -6,9 +6,9 @@ $abizena = $_POST["abizena"];
 $telefonoa = $_POST["telefonoa"];
 $posta = $_POST["posta"];
 $pasahitza = $_POST["pasahitza"];
-$nan = $_POST["nan"];
+$adina = $_POST["adina"];
 
-$sql = "INSERT INTO bezeroak (izena, abizena, telefonoa, posta_elektronikoa, pasahitza, nan) VALUES (:izena, :abizena, :telefonoa, :posta, :pasahitza, :nan)";
+$sql = "INSERT INTO bezeroak (izena, abizena, telefonoa, posta_elektronikoa, pasahitza, adina) VALUES (:izena, :abizena, :telefonoa, :posta, :pasahitza, :adina)";
 
 $stmt = $pdo->prepare($sql);
 
@@ -18,7 +18,7 @@ $stmt->execute([
     ':telefonoa' => $telefonoa,
     ':posta' => $posta,
     ':pasahitza' => $pasahitza,
-    ':nan' => $nan
+    ':adina' => $adina
 ]);
 
 header("Location: hasiera.php");

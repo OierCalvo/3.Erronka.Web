@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <header>
@@ -30,10 +31,10 @@
         </div>
 
         <div class="mobile">
-    <button class="openbtn" onclick="openNav()">☰ </button>
+            <button class="openbtn" id="openMenuBtn">☰</button>
 
-    <div class="sidebar" id="mySidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+            <div class="sidebar" id="mySidebar">
+                <a href="javascript:void(0)" class="closebtn" id="closeMenuBtn">×</a>
         <?php
             if(isset($_SESSION["erab"])){
             echo "<a href='logout.php'><button class='sh'>" . trans("logout") . "</button></a>";
@@ -53,17 +54,15 @@
 </div>
     </header>
     <script>
+        $(document).ready(function() {
+            $('#openMenuBtn').click(function() {
+                $('#mySidebar').addClass('active');
+            });
 
-        function openNav() {
-            document.getElementById("mySidebar").style.width = "75%";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidebar").style.width = "0";
-        }
-
-        
-
+            $('#closeMenuBtn').click(function(){
+                $('#mySidebar').removeClass('active');
+            });
+        });
     </script>
 </body>
 </html>

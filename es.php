@@ -61,9 +61,15 @@ return [
     "telefonoa" => "Telefono:",
     "posta" => "Correo electronico:",
     "pasahitza" => "Contraseña:",
-    "nan" => "DNI:",
+    "adina" => "Edad:",
     "Erreserbatu" => "Hacer reserva",
     "Data" => "Fecha",
-    "Pertsonak" => "Personas"
+    "Pertsonak" => "Personas",
+    "pr1" => "Edad de la primera persona:",
+    "pr2" => "Edad de la segunda persona:",
+    "pr3" => "Edad de la tercera persona:",
+    "pr4" => "Edad de la cuarta persona:",
+    "pr5" => "Edad de la quinta persona:",
+    "Bidali" => "Enviar"
     
 ];

@@ -13,6 +13,7 @@ foreach($stmt as $row){
     if ($erabiltzailea == $row["posta_elektronikoa"] && $pasahitza == $row["pasahitza"]) {
     $_SESSION['erab'] = $_POST["erab"];
     $_SESSION['id'] = $row["id"];
+    $_SESSION['adina'] = $row["adina"];
     header("Location: hasiera.php");
     exit();
 }
