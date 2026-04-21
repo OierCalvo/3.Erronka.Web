@@ -11,21 +11,36 @@ include_once "db.php";
     <link rel="stylesheet" href="css.css">
 </head>
 <body>
-    <div class="habitat-container">
+    <div class="ekitaldiak-container">
     <?php
         if($_SESSION["_LANGUAGE"] == "eus"){
         $stmt = $pdo->query("SELECT * FROM ekitaldiak");
         foreach($stmt as $row){
-            echo "<a href='" . $row["id"] . ".php'>" ;
             echo "<div>";
             echo "<h1>" . trans($row['ekitaldi_izena']) . "</h1>";
             echo "<img src='irudiak/" . $row['irudiak'] . "' />";
-            echo "<h2>" . $row["data"] . "</h2>";
+            echo "<h2>" . $row["ordua"] . "</h2>";
             echo "<p>" . $row["deskribapena"] . "</p>";
+            if(isset($_SESSION["erab"])){
+            echo "<button><a href='erreserbatu.php?id=" . $row["id"] . "'>" . trans("Erreserbatu") . "</a></button>";
+            }
             echo "</div>";
-            echo "</a>";
+        }
+        }else if($_SESSION["_LANGUAGE"] == "es"){
+           $stmt = $pdo->query("SELECT * FROM ekitaldiak_es");
+        foreach($stmt as $row){
+            echo "<div>";
+            echo "<h1>" . trans($row['ekitaldi_izena']) . "</h1>";
+            echo "<img src='irudiak/" . $row['irudiak'] . "' />";
+            echo "<h2>" . $row["ordua"] . "</h2>";
+            echo "<p>" . $row["deskribapena"] . "</p>";
+            if(isset($_SESSION["erab"])){
+            echo "<button><a href='erreserbatu.php?id=" . $row["id"] . "'>" . trans("Erreserbatu") . "</a></button>";
+            }
+            echo "</div>";
         }
         }
     ?>
+    </div>
 </body>
 </html>

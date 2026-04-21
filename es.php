@@ -61,6 +61,9 @@ return [
     "telefonoa" => "Telefono:",
     "posta" => "Correo electronico:",
     "pasahitza" => "Contraseña:",
-    "nan" => "DNI:"
+    "nan" => "DNI:",
+    "Erreserbatu" => "Hacer reserva",
+    "Data" => "Fecha",
+    "Pertsonak" => "Personas"
     
 ];

@@ -61,5 +61,9 @@ return [
     "telefonoa" => "Telefonoa:",
     "posta" => "Posta elektronikoa:",
     "pasahitza" => "Pasahitza:",
-    "nan" => "Nan:"
+    "nan" => "Nan:",
+    "Erreserbatu" => "Erreserba egin",
+    "Data" => "Data",
+    "Pertsonak" => "Pertsonak"
+
 ];
