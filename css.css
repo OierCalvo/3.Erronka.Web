@@ -84,6 +84,56 @@ a:hover {
     color:#457c48;
 }
 
+.habitat-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.habitat-container > div {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 14px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    text-align: center;
+}
+
+.habitat-container > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.habitat-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.habitat-container h1 {
+    font-size: 1.8rem;
+    color: #fafcff;
+    margin-bottom: 10px;
+}
+
+.habitat-container h2 {
+    font-size: 1.4rem;
+    color: #7dc7ff;
+    margin-bottom: 10px;
+}
+
+.habitat-container p {
+    color: #EEF2F7;
+    margin: 5px 0;
+}
+
 .mobile {
     display: flex;
     flex-direction: row;
@@ -296,6 +346,102 @@ iframe{
     margin-top:16px;
 }
 
+/* Mobile-first: Containers */
+.ekitaldiak-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    width: 90%;
+    max-width: 100%;
+    margin: 20px auto 30px;
+}
+
+.ekitaldiak-container > div {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.ekitaldiak-container > div > h1,
+.ekitaldiak-container > div > p {
+    margin: 8px 0;
+    font-size: 0.95rem;
+}
+
+.ekitaldiak-container > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.ekitaldiak-container img {
+    max-width: 100%;
+    height: 150px;
+    width: auto;
+    border-radius: 8px;
+    margin: 8px 0;
+}
+
+.tropikala-container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 50px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto 30px;
+}
+
+.tropikala-container > div {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    min-width: 220px;
+}
+
+.tropikala-container > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.tropikala-container>div>img {
+    min-width: 150px;
+    height: 200px;
+    width: 100%;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.habitat-container{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 50px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.habitat-container>a>div{
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    border-radius: 14px;
+    padding: 20px;
+}
+
+.habitat-container>a>div>img{
+    height: 200px;
+    width: 100%;
+    max-width: 300px;
+}
+
 @media (min-width: 1024px){
 html, body{
     margin:0;
@@ -449,13 +595,86 @@ iframe{
     font-size: 1em;
 }
 
-.container ul {
+/* Form Container Styles */
+.form-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.form-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.form-container h1 {
+    font-size: 2rem;
+    color: #fafcff;
+    text-shadow: 0 2px 14px rgba(0,0,0,0.32);
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-container label {
+    color: #7dc7ff;
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-container input[type="date"],
+.form-container input[type="number"] {
+    padding: 10px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fafcff;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.form-container input[type="submit"] {
+    color: rgba(255, 255, 255, 0.6);
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #456377 0%, #5c8199 100%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+    margin-top: 10px;
+}
+
+.form-container>input:hover {
+    background: linear-gradient(135deg, #5c8199 0%, #7aa3b3 100%);
+    box-shadow: 0 6px 16px rgba(81, 136, 172, 0.4);
+    transform: translateY(-2px);
+}
+
+.container>ul {
     list-style: none;
     padding: 0;
     margin: 15px 0 25px;
 }
 
-.container ul li {
+.container ul>li {
     padding: 12px 15px 12px 40px;
     margin: 8px 0;
     position: relative;
@@ -464,8 +683,7 @@ iframe{
     transition: all 0.3s ease;
 }
 
-/* Zerrendetako elementuentzako animazio leuna */
-.container ul li:hover {
+.container>ul>li:hover {
     background-color: rgba(255, 255, 255, 0.05);
     transform: translateX(5px);
 }
@@ -496,4 +714,40 @@ iframe{
     margin-top:16px;
 }
 
+/* Desktop adjustments - multi-column layouts */
+.habitat-container{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.habitat-container>a>div>img{
+    width: 300px;
+}
+
+.ekitaldiak-container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+}
+
+.ekitaldiak-container > div > h1,
+.ekitaldiak-container > div > p {
+    font-size: 1rem;
+}
+
+.ekitaldiak-container img{
+    height: 200px;
+}
+
+.ekitaldiak-container>div>img{
+    width: 400px;
+}
+
+.tropikala-container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.tropikala-container>div{
+    max-width: 100%;
+}
 }
