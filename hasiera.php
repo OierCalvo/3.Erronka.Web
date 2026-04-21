@@ -10,65 +10,42 @@ include_once "header.php";
     <link rel="stylesheet" href="css.css">
 </head>
 <body>
-    <div class="home-wrapper">
-        <div class="home-hero">
-            <h1><?= trans("ongietorri") ?></h1>
-            <div class="hero-line"></div>
-        </div>
+    <div class="container">
+        <h1><?= trans("ongietorri") ?></h1>
+        <h2><?= trans("ordutegi") ?></h2>
+        <ul>
+            <li><?= trans("ordutegi1") ?></li>
+            <li><?= trans("ordutegi2") ?></li>
+            <li><?= trans("ordutegi3") ?></li>
+        </ul>
+            <h2><?= trans("prezioak") ?></h2>
+            <ul>
+                <li><?= trans("helduak") ?></li>
+                <li><?= trans("umeak") ?></li>
+                <li><?= trans("haurrak") ?></li>
+                <li><?= trans("taldeak") ?></li>
+            </ul>
 
-        <div class="home-grid">
-            <!-- Ordutegiak -->
-            <div class="home-card">
-                <div class="card-icon">🕒</div>
-                <h2><?= trans("ordutegi") ?></h2>
-                <ul>
-                    <li><?= trans("ordutegi1") ?></li>
-                    <li><?= trans("ordutegi2") ?></li>
-                    <li><?= trans("ordutegi3") ?></li>
-                </ul>
-            </div>
+            <h2><?= trans("arauak") ?></h2>
+            <ul>
+                <li><?= trans("arau1") ?></li>
+                <li><?= trans("arau2") ?></li>
+                <li><?= trans("arau3") ?></li>
+                <li><?= trans("arau4") ?></li>
+                <li><?= trans("arau5") ?></li>
+                <li><?= trans("arau6") ?></li>
+                <li><?= trans("arau7") ?></li>
+                <li><?= trans("arau8") ?></li>
+            </ul>
 
-            <!-- Prezioak -->
-            <div class="home-card">
-                <div class="card-icon">🎟️</div>
-                <h2><?= trans("prezioak") ?></h2>
-                <ul>
-                    <li><?= trans("helduak") ?></li>
-                    <li><?= trans("umeak") ?></li>
-                    <li><?= trans("haurrak") ?></li>
-                    <li><?= trans("taldeak") ?></li>
-                </ul>
-            </div>
-
-            <!-- Zerbitzuak -->
-            <div class="home-card">
-                <div class="card-icon">✨</div>
-                <h2><?= trans("zerbitzuak") ?></h2>
-                <ul>
-                    <li><?= trans("zerb1") ?></li>
-                    <li><?= trans("zerb2") ?></li>
-                    <li><?= trans("zerb3") ?></li>
-                    <li><?= trans("zerb4") ?></li>
-                    <li><?= trans("zerb5") ?></li>
-                </ul>
-            </div>
-
-            <!-- Arauak -->
-            <div class="home-card">
-                <div class="card-icon">⚠️</div>
-                <h2><?= trans("arauak") ?></h2>
-                <ul>
-                    <li><?= trans("arau1") ?></li>
-                    <li><?= trans("arau2") ?></li>
-                    <li><?= trans("arau3") ?></li>
-                    <li><?= trans("arau4") ?></li>
-                    <li><?= trans("arau5") ?></li>
-                    <li><?= trans("arau6") ?></li>
-                    <li><?= trans("arau7") ?></li>
-                    <li><?= trans("arau8") ?></li>
-                </ul>
-            </div>
-        </div>
+            <h2><?= trans("zerbitzuak") ?></h2>
+            <ul>
+                <li><?= trans("zerb1") ?></li>
+                <li><?= trans("zerb2") ?></li>
+                <li><?= trans("zerb3") ?></li>
+                <li><?= trans("zerb4") ?></li>
+                <li><?= trans("zerb5") ?></li>
+            </ul>
     </div>
 </body>
 </html>
