@@ -55,5 +55,15 @@ return [
     "logout" => "Saioa itxi",
     "hemen" => "Ez daukazu akonturik?",
     "click" => "Erregistratu",
-    "erregistratu" => "Erregistratu"
+    "erregistratu" => "Erregistratu",
+    "izena" => "Izena:",
+    "abizena" => "Abizena:",
+    "telefonoa" => "Telefonoa:",
+    "posta" => "Posta elektronikoa:",
+    "pasahitza" => "Pasahitza:",
+    "nan" => "Nan:",
+    "Erreserbatu" => "Erreserba egin",
+    "Data" => "Data",
+    "Pertsonak" => "Pertsonak"
+
 ];

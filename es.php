@@ -55,5 +55,15 @@ return [
     "logout" => "Cerrar sesion",
     "hemen" => "No tienes una cuenta?",
     "click" => "Registrate",
-    "erregistratu" => "Registrarse"
+    "erregistratu" => "Registrarse",
+    "izena" => "Nombre:",
+    "abizena" => "Apellido:",
+    "telefonoa" => "Telefono:",
+    "posta" => "Correo electronico:",
+    "pasahitza" => "Contraseña:",
+    "nan" => "DNI:",
+    "Erreserbatu" => "Hacer reserva",
+    "Data" => "Fecha",
+    "Pertsonak" => "Personas"
+    
 ];
