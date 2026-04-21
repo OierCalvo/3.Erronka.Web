@@ -548,17 +548,19 @@ iframe{
 
 .habitat-container{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns:auto auto;
     gap:50px;
     margin-top:30px;
 }
 
-.habitat-container>div{
+.habitat-container>a>div{
     text-align: center;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    border-radius: 14px;
+    padding:20px;
 }
 
-.habitat-container>div>img{
+.habitat-container>a>div>img{
     height:200px;
     width:300px;
 }

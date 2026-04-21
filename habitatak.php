@@ -16,17 +16,20 @@ include_once "db.php";
         if($_SESSION["_LANGUAGE"] == "eus"){
         $stmt = $pdo->query("SELECT * FROM habitatak");
         foreach($stmt as $row){
+            echo "<a href='" . $row["mota"] . ".php'>" ;
             echo "<div>";
-            echo "<h1>" . trans($row['izena']) . "</h1>";
+            echo "<h1>" . $row['izena'] . "</h1>";
             echo "<img src='irudiak/" . $row['irudiak'] . "' />";
             echo "<h2>" . $row["mota"] . "</h2>";
             echo "<p>" . $row["temperatura"] . "ºC" . "</p>";
             echo "<p>" . $row["deskribapena"] . "</p>";
             echo "</div>";
+            echo "</a>";
         }
         }else if($_SESSION["_LANGUAGE"] == "es"){
            $stmt = $pdo->query("SELECT * FROM habitatak_es");
         foreach($stmt as $row){
+            echo "<a href='" . $row["mota"] . ".php'>" ;
             echo "<div>";
             echo "<h1>" . trans($row['nombre']) . "</h1>";
             echo "<img src='irudiak/" . $row['imagenes'] . "' />";
@@ -34,6 +37,7 @@ include_once "db.php";
             echo "<p>" . $row["temperatura"] . "ºC" . "</p>";
             echo "<p>" . $row["descripcion"] . "</p>";
             echo "</div>";
+            echo "</a>";
         } 
         }
     ?>
