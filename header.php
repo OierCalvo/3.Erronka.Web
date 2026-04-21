@@ -39,6 +39,7 @@
             echo "<a href='logout.php'><button class='sh'>" . trans("logout") . "</button></a>";
             }else{
             echo "<a href='login.php'><button class='sh'> " .  trans("login") . "</button></a>";
+            echo "<a href='erregistratu.php'><button class='sh'> " .  trans("erregistratu") . "</button></a>";
             }
         ?>
         <?php
