@@ -346,24 +346,30 @@ iframe{
     margin-top:16px;
 }
 
+/* Mobile-first: Containers */
 .ekitaldiak-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: 1fr;
+    gap: 15px;
     width: 90%;
-    max-width: 1200px;
-    margin: 20px auto;
+    max-width: 100%;
+    margin: 20px auto 30px;
 }
 
 .ekitaldiak-container > div {
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     border-radius: 14px;
-    padding: 20px;
+    padding: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
     text-align: center;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.ekitaldiak-container > div > h1,
+.ekitaldiak-container > div > p {
+    margin: 8px 0;
+    font-size: 0.95rem;
 }
 
 .ekitaldiak-container > div:hover {
@@ -374,9 +380,66 @@ iframe{
 
 .ekitaldiak-container img {
     max-width: 100%;
-    height: auto;
+    height: 150px;
+    width: auto;
+    border-radius: 8px;
+    margin: 8px 0;
+}
+
+.tropikala-container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 50px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto 30px;
+}
+
+.tropikala-container > div {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    min-width: 220px;
+}
+
+.tropikala-container > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.tropikala-container>div>img {
+    min-width: 150px;
+    height: 200px;
+    width: 100%;
     border-radius: 8px;
     margin: 10px 0;
+}
+
+.habitat-container{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 50px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.habitat-container>a>div{
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    border-radius: 14px;
+    padding: 20px;
+}
+
+.habitat-container>a>div>img{
+    height: 200px;
+    width: 100%;
+    max-width: 300px;
 }
 
 @media (min-width: 1024px){
@@ -651,34 +714,40 @@ iframe{
     margin-top:16px;
 }
 
+/* Desktop adjustments - multi-column layouts */
 .habitat-container{
-    display: grid;
-    grid-template-columns:auto auto;
-    gap:50px;
-    margin-top:30px;
-}
-
-.habitat-container>a>div{
-    text-align: center;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
-    border-radius: 14px;
-    padding:20px;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .habitat-container>a>div>img{
-    height:200px;
-    width:300px;
+    width: 300px;
 }
 
 .ekitaldiak-container{
-    grid-template-columns: auto auto;
-    gap: 50px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+}
+
+.ekitaldiak-container > div > h1,
+.ekitaldiak-container > div > p {
+    font-size: 1rem;
+}
+
+.ekitaldiak-container img{
+    height: 200px;
 }
 
 .ekitaldiak-container>div>img{
-    height: 200px;
     width: 400px;
+}
+
+.tropikala-container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.tropikala-container>div{
+    max-width: 100%;
 }
 }
