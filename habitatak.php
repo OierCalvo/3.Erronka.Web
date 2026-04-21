@@ -1,5 +1,6 @@
 <?php
 include_once "header.php";
+include_once "db.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,6 +11,32 @@ include_once "header.php";
     <link rel="stylesheet" href="css.css">
 </head>
 <body>
-    
+    <div class="habitat-container">
+    <?php
+        if($_SESSION["_LANGUAGE"] == "eus"){
+        $stmt = $pdo->query("SELECT * FROM habitatak");
+        foreach($stmt as $row){
+            echo "<div>";
+            echo "<h1>" . trans($row['izena']) . "</h1>";
+            echo "<img src='irudiak/" . $row['irudiak'] . "' />";
+            echo "<h2>" . $row["mota"] . "</h2>";
+            echo "<p>" . $row["temperatura"] . "ºC" . "</p>";
+            echo "<p>" . $row["deskribapena"] . "</p>";
+            echo "</div>";
+        }
+        }else if($_SESSION["_LANGUAGE"] == "es"){
+           $stmt = $pdo->query("SELECT * FROM habitatak_es");
+        foreach($stmt as $row){
+            echo "<div>";
+            echo "<h1>" . trans($row['nombre']) . "</h1>";
+            echo "<img src='irudiak/" . $row['imagenes'] . "' />";
+            echo "<h2>" . $row["tipo"] . "</h2>";
+            echo "<p>" . $row["temperatura"] . "ºC" . "</p>";
+            echo "<p>" . $row["descripcion"] . "</p>";
+            echo "</div>";
+        } 
+        }
+    ?>
+    </div>
 </body>
 </html>
