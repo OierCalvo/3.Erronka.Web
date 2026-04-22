@@ -7,7 +7,6 @@ $id_ekitaldia = $_POST["id_ekitaldia"];
 $data = $_POST["data"];
 $pertsonak = $_POST["pertsonak"];
 $prezioa = 0;
-$adina = $_SESSION["adina"];
 function kalkulatuPrezioa($adina){
     if($adina < 3){
         return 0;
@@ -32,8 +31,12 @@ if(isset($_POST["adina4"])){
 if(isset($_POST["adina5"])){
     $adina5 = $_POST["adina5"];
 }
+$adinaBezero = 0;
+if(isset($_SESSION["adina"])){
+    $adinaBezero = $_SESSION["adina"];
+}
 
-$prezioa += kalkulatuPrezioa($adina);
+$prezioa += kalkulatuPrezioa($adinaBezero);
 
 if(isset($adina1)){
     $prezioa += kalkulatuPrezioa($adina1);
