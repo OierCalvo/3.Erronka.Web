@@ -1,13 +1,7 @@
 <?php
 include_once "header.php";
 include_once "db.php";
-
-// Capturar el id del evento
-$id_ekitaldia = isset($_GET['id']) ? $_GET['id'] : (isset($_GET['id_ekitaldia']) ? $_GET['id_ekitaldia'] : '');
-
-if(empty($id_ekitaldia)) {
-    die("Error: No se ha recibido el ID del evento. Vuelve atrás e intenta de nuevo.");
-}
+$id_ekitaldia = $_GET["id"];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +16,7 @@ if(empty($id_ekitaldia)) {
         <form action="erreserbatu.php" method="GET">
             <label for="ordua"><?= trans("Pertsonak") ?>:</label><br>
             <input type="number" id="pertsonak" name="pertsonak">
-            <input type="hidden" name="id" value="<?= htmlspecialchars($id_ekitaldia) ?>">
+            <input type="hidden" name="id" value="<?= $id_ekitaldia ?>">
             <input type="submit" value="<?= trans("Bidali") ?>"><br>
         </form>
         <form action="erreserbaGauzatu.php" method="post">
@@ -72,7 +66,7 @@ if(empty($id_ekitaldia)) {
             <label for="data"><?= trans("Data") ?>:</label><br>
             <input type="date" id="data" name="data"><br>
             <input type="submit" value="<?= trans("Erreserbatu") ?>">
-            <input type="hidden" name="id_ekitaldia" value="<?= htmlspecialchars($id_ekitaldia) ?>">
+            <input type="hidden" name="id_ekitaldia" value="<?= $id_ekitaldia ?>">
             <input type="hidden" name="pertsonak" value="<?= $_GET['pertsonak'] ?? '' ?>">
 
         </form>

@@ -17,7 +17,7 @@ include_once "db.php";
         $stmt = $pdo->query("SELECT * FROM ekitaldiak");
         foreach($stmt as $row){
             echo "<div>";
-            echo "<h1>" . trans($row['ekitaldi_izena']) . "</h1>";
+            echo "<h1>" . $row['ekitaldi_izena'] . "</h1>";
             echo "<img src='irudiak/" . $row['irudiak'] . "' />";
             echo "<h2>" . $row["ordua"] . "</h2>";
             echo "<p>" . $row["deskribapena"] . "</p>";
