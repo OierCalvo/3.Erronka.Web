@@ -1,16 +1,7 @@
 <?php
     include_once "translations.php";
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</head>
-<body>
     <header>
         <div class="header">
             <a href="hasiera.php"><?= trans("hasiera") ?></a>
@@ -25,9 +16,11 @@
             echo "<a style='margin:0' href='login.php'><button class='sh'> " .  trans("login") . "</button></a>";
             }
             ?>
+            <div class="hizkuntza">
             <?php
                 include "selectLang.php";
             ?>
+            </div>
         </div>
 
         <div class="mobile">
@@ -64,5 +57,3 @@
             });
         });
     </script>
-</body>
-</html>
