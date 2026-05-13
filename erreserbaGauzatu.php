@@ -55,16 +55,16 @@ if(isset($adina5)){
 }
 
 
-$sql = "INSERT INTO erreserbak (id_bezeroa, id_ekitaldia, data, plaza_kopurua,prezioa) VALUES (:id_bezeroa, :id_ekitaldia, :data, :plaza_kopurua, :prezioa)";
+$sql = "INSERT INTO erreserbak (id_bezeroa, id_ekitaldia, data, plaza_kopurua, prezioa) VALUES (:idBezeroa, :idEkitaldia, :data, :plazaKopurua, :prezioa)";
 
 $stmt = $pdo->prepare($sql);
 
 try {
     $stmt->execute([
-        ':id_bezeroa' => $id_bezeroa,
-        ':id_ekitaldia' => $id_ekitaldia,
+        ':idBezeroa' => $id_bezeroa,
+        ':idEkitaldia' => $id_ekitaldia,
         ':data' => $data,
-        ':plaza_kopurua' => $pertsonak,
+        ':plazaKopurua' => $pertsonak,
         ':prezioa' => $prezioa
     ]);
     header("Location: hasiera.php");

@@ -552,6 +552,11 @@ html, body{
     margin-left:10px;
 }
 
+.header>.hizkuntza{
+    display: flex;
+    align-items: center;
+}
+
 .zoo_h {
     margin-top: 1rem;
     max-width: auto;

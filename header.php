@@ -15,9 +15,11 @@
             echo "<a style='margin:0' href='login.php'><button class='sh'> " .  trans("login") . "</button></a>";
             }
             ?>
+            <div class="hizkuntza">
             <?php
                 include "selectLang.php";
             ?>
+            </div>
         </div>
 
         <div class="mobile">
