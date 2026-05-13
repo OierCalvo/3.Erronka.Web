@@ -1,5 +1,5 @@
 <?php
-include_once "header.php";
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,6 +11,9 @@ include_once "header.php";
 
 </head>
 <body>
+    <?php 
+    include_once "header.php"; 
+    ?>
     <div class="login-form">
     <form action="loginAutentikatu.php" method="POST">
         <label for="erabiltzailea"><?= trans("erab") ?></label><br>

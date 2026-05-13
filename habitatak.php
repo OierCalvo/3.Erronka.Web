@@ -1,5 +1,4 @@
 <?php
-include_once "header.php";
 include_once "db.php";
 ?>
 <!DOCTYPE html>
@@ -10,6 +9,9 @@ include_once "db.php";
     <title>Document</title>
 </head>
 <body>
+    <?php 
+    include_once "header.php"; 
+    ?>
     <div class="habitat-container">
     <?php
         if($_SESSION["_LANGUAGE"] == "eus"){

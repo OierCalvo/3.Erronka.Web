@@ -442,6 +442,80 @@ iframe{
     max-width: 300px;
 }
 
+/* Mobile-first styles - Estilos para móvil */
+.form-container {
+    width: 95%;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.form-container h1 {
+    font-size: 1.6rem;
+    color: #fafcff;
+    text-shadow: 0 2px 14px rgba(0,0,0,0.32);
+    margin-bottom: 20px;
+}
+
+.form-container form {
+    gap: 12px;
+}
+
+.form-container label {
+    color: #7dc7ff;
+    font-weight: 500;
+    margin-bottom: 8px;
+    display: block;
+    font-size: 14px;
+}
+
+.form-container input {
+    padding: 12px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fafcff;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.form-container .bidali {
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #456377 0%, #5c8199 100%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+    width: 100%;
+    margin-top: 8px;
+}
+
+.form-container input[type="submit"]:hover {
+    background: linear-gradient(135deg, #5c8199 0%, #7aa3b3 100%);
+    box-shadow: 0 6px 16px rgba(81, 136, 172, 0.4);
+    transform: translateY(-2px);
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+h2, h3 {
+    font-size: 1.3rem;
+}
+
 @media (min-width: 1024px){
 html, body{
     margin:0;

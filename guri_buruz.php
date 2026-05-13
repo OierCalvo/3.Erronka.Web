@@ -1,6 +1,3 @@
-<?php
-include_once "header.php";
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +7,9 @@ include_once "header.php";
     <link rel="stylesheet" href="css.css">
 </head>
 <body>
+    <?php 
+    include_once "header.php"; 
+    ?>
     <h2><?= trans("H&H") ?></h2>
     <div class="zoo_h">
     <h3><?= trans("historia") ?></h3>

@@ -1,5 +1,4 @@
 <?php
-include_once "header.php";
 include_once "translations.php";
 ?>
 <!DOCTYPE html>
@@ -10,6 +9,9 @@ include_once "translations.php";
     <title>Document</title>
 </head>
 <body>
+    <?php 
+    include_once "header.php"; 
+    ?>
     <div class="login-form">
     <form action="erregistroaSortu.php" method="POST">
         <label for="izena"><?= trans("izena") ?></label><br>
@@ -22,8 +24,8 @@ include_once "translations.php";
         <input type="text" id="posta" name="posta"><br>
         <label for="pasahitza"><?= trans("pasahitza") ?></label><br>
         <input type="text" id="pasahitza" name="pasahitza"><br>
-        <label for="nan"><?= trans("nan") ?></label><br>
-        <input type="text" id="nan" name="nan"><br>
+        <label for="adina"><?= trans("adina") ?></label><br>
+        <input type="text" id="adina" name="adina"><br>
         <input type ="submit" class="loginBtn" value="<?= trans("erregistratu") ?>">
     </form>
     </div>

@@ -1,16 +1,6 @@
 <?php
     include_once "translations.php";
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</head>
-<body>
     <header>
         <div class="header">
             <a href="hasiera.php"><?= trans("hasiera") ?></a>
@@ -53,6 +43,7 @@
     </div>
 </div>
     </header>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function() {
             $('#openMenuBtn').click(function() {
@@ -64,5 +55,3 @@
             });
         });
     </script>
-</body>
-</html>

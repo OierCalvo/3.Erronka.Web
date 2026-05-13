@@ -1,6 +1,3 @@
-<?php
-include_once "header.php";
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +7,9 @@ include_once "header.php";
     <link rel="stylesheet" href="css.css">
 </head>
 <body>
+    <?php 
+    include_once "header.php"; 
+    ?>
     <div class="container">
         <h1><?= trans("ongietorri") ?></h1>
         <h2><?= trans("ordutegi") ?></h2>
@@ -23,7 +23,6 @@ include_once "header.php";
                 <li><?= trans("helduak") ?></li>
                 <li><?= trans("umeak") ?></li>
                 <li><?= trans("haurrak") ?></li>
-                <li><?= trans("taldeak") ?></li>
             </ul>
 
             <h2><?= trans("arauak") ?></h2>

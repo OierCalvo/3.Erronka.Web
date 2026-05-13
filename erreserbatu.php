@@ -1,5 +1,4 @@
 <?php
-include_once "header.php";
 include_once "db.php";
 $id_ekitaldia = $_GET["id"];
 ?>
@@ -9,63 +8,58 @@ $id_ekitaldia = $_GET["id"];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css.css">
 </head>
 <body>
+    <?php 
+    include_once "header.php"; 
+    ?>
     <div class="form-container">
         <h1><?= trans("Erreserbatu") ?></h1>
         <form action="erreserbatu.php" method="GET">
-            <label for="ordua"><?= trans("Pertsonak") ?>:</label><br>
-            <input type="number" id="pertsonak" name="pertsonak">
-            <input type="hidden" name="id" value="<?= $id_ekitaldia ?>">
-            <input type="submit" value="<?= trans("Bidali") ?>"><br>
+            <?php
+            if(!isset($_GET["pertsonak"])){
+            echo "<label for='pertsonak'>" . trans("Pertsonak") . ":</label>";
+            echo "<input type='number' id='pertsonak' name='pertsonak' min='1' max='5' required>";
+            echo "<input type='hidden' name='id' value='" . $id_ekitaldia . "'>";
+            echo "<input class='bidali' type='submit' value='" . trans("Bidali") . "'>";
+            }
+            ?>
+            
         </form>
         <form action="erreserbaGauzatu.php" method="post">
         <?php
             if(isset($_GET["pertsonak"])){
             $pertsonak = $_GET["pertsonak"];
             if($pertsonak == 5){
-              echo "<label for='adina1'>" . trans('pr1') . "</label><br>";
-            echo "<input type='number' id='adina1' name='adina1'><br>";
-            echo "<label for='adina2'>" .  trans('pr2') . "</label><br>";
-            echo "<input type='number' id='adina2' name='adina2'><br>";
-            echo "<label for='adina3'>" .  trans('pr3') . "</label><br>";
-            echo "<input type='number' id='adina3' name='adina3'><br>";
-            echo "<label for='adina4'>" . trans('pr4') . "</label><br>";
-            echo "<input type='number' id='adina4' name='adina4'><br>";
-            echo "<label for='adina5'>" . trans('pr5') . "</label><br>";
-            echo "<input type='number' id='adina5' name='adina5'><br>";  
+              for($i = 1; $i <= 5; $i++){
+                echo "<label for='adina" . $i . "'>" . trans('pr' . $i) . "</label>";
+                echo "<input type='number' id='adina" . $i . "' name='adina" . $i . "' min='0' required>";
+              }
             }else if($pertsonak == 4){
-            echo "<label for='adina1'>" . trans('pr1') . "</label><br>";
-            echo "<input type='number' id='adina1' name='adina1'><br>";
-            echo "<label for='adina2'>" .  trans('pr2') . "</label><br>";
-            echo "<input type='number' id='adina2' name='adina2'><br>";
-            echo "<label for='adina3'>" .  trans('pr3') . "</label><br>";
-            echo "<input type='number' id='adina3' name='adina3'><br>";
-            echo "<label for='adina4'>" . trans('pr4') . "</label><br>";
-            echo "<input type='number' id='adina4' name='adina4'><br>";
+              for($i = 1; $i <= 4; $i++){
+                echo "<label for='adina" . $i . "'>" . trans('pr' . $i) . "</label>";
+                echo "<input type='number' id='adina" . $i . "' name='adina" . $i . "' min='0' required>";
+              }
             }else if($pertsonak == 3){
-            echo "<label for='adina1'>" . trans('pr1') . "</label><br>";
-            echo "<input type='number' id='adina1' name='adina1'><br>";
-            echo "<label for='adina2'>" .  trans('pr2') . "</label><br>";
-            echo "<input type='number' id='adina2' name='adina2'><br>";
-            echo "<label for='adina3'>" .  trans('pr3') . "</label><br>";
-            echo "<input type='number' id='adina3' name='adina3'><br>";  
+              for($i = 1; $i <= 3; $i++){
+                echo "<label for='adina" . $i . "'>" . trans('pr' . $i) . "</label>";
+                echo "<input type='number' id='adina" . $i . "' name='adina" . $i . "' min='0' required>";
+              }
             }else if($pertsonak == 2){
-            echo "<label for='adina1'>" . trans('pr1') . "</label><br>";
-            echo "<input type='number' id='adina1' name='adina1'><br>";
-            echo "<label for='adina2'>" .  trans('pr2') . "</label><br>";
-            echo "<input type='number' id='adina2' name='adina2'><br>";
+              for($i = 1; $i <= 2; $i++){
+                echo "<label for='adina" . $i . "'>" . trans('pr' . $i) . "</label>";
+                echo "<input type='number' id='adina" . $i . "' name='adina" . $i . "' min='0' required>";
+              }
             }else if($pertsonak == 1){
-            echo "<label for='adina1'>" . trans('pr1') . "</label><br>";
-            echo "<input type='number' id='adina1' name='adina1'><br>";
-            }else{
-            echo "";
+                echo "<label for='adina1'>" . trans('pr1') . "</label>";
+                echo "<input type='number' id='adina1' name='adina1' min='0' required>";
             }
             }
             ?>
-            <label for="data"><?= trans("Data") ?>:</label><br>
-            <input type="date" id="data" name="data"><br>
-            <input type="submit" value="<?= trans("Erreserbatu") ?>">
+            <label for="data"><?= trans("Data") ?>:</label>
+            <input type="date" id="data" name="data" required>
+            <input class="bidali" type="submit" value="<?= trans("Erreserbatu") ?>">
             <input type="hidden" name="id_ekitaldia" value="<?= $id_ekitaldia ?>">
             <input type="hidden" name="pertsonak" value="<?= $_GET['pertsonak'] ?? '' ?>">
 
