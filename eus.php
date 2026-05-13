@@ -70,6 +70,7 @@ return [
     "pr3" => "Hirugarren pertsonaren adina:",
     "pr4" => "Laugarren pertsonaren adina:",
     "pr5" => "Bostgarren pertsonaren adina:",
-    "Bidali" => "Bidali"
+    "Bidali" => "Bidali",
+    "ikusiAnimaliak" => "Zoologikoan ikusiko dituzun animalien irudiak"
 
 ];

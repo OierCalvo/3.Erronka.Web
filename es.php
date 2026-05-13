@@ -70,6 +70,8 @@ return [
     "pr3" => "Edad de la tercera persona:",
     "pr4" => "Edad de la cuarta persona:",
     "pr5" => "Edad de la quinta persona:",
-    "Bidali" => "Enviar"
+    "Bidali" => "Enviar",
+    "ikusiAnimaliak" => "Imagenes de los animales que veras en el zoologico"
+
     
 ];
